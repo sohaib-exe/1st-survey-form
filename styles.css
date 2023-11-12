@@ -10,9 +10,16 @@ body {
   
   h1,p {
     text-align: center;
-    margin: 1em auto;
   }
   
+  p {
+    margin-bottom: 30px;
+  }
+
+  h1 {
+    margin-bottom: 0px;
+  }
+
   form {
     width: 60vw;
     max-width: 500px;
