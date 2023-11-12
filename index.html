@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  
+<!-- Body Starts Here -->
+
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+  </head>
+
+<!-- Body Starts Here -->
+
+  <body>
+
+    <h1 id="title"> FreeCodeCamp Survey Form </h1>
+    <p id="description">Survey Form For FreeCodeCamp 1st Project</p>
+
+<!-- Basic Info Section -->
+
+    <form id="survey-form">
+      
+      <fieldset>
+
+        <legend> Your Basic Information </legend>
+
+        <label for="name" id="name-label"> Your Full Name <input id="name" type="text" placeholder="John Doe" required /> </label>
+
+        <label for="email" id="email-label"> Your Email <input id="email" type="email" placeholder="johndoe@email.com" required /> </label>
+
+        <label for="number" id="number-label"> Your Phone Number <input id="number" type="number" min="10" max="10" placeholder="1234567899" required /> </label>
+
+        <label for="dropdown">Your Country of Residence </label>
+        <select id="dropdown" name="country">
+          <option disabled>(select the country you live in)</option>
+          <option value="1">Pakistan</option>
+          <option value="2">Not Pakistan</option>
+        </select>
+
+        <label>Write a lullaby ;p
+            <textarea id="bio" name="bio" rows="5" cols="15" placeholder="Lullaby goes like..."></textarea>
+        </label>
+
+      </fieldset>
+      
+      <!-- Radio Buttons Section -->
+
+      <fieldset>
+
+        <label>Do You Like Cricket?</label>
+         
+        <label>
+            <input type="radio" value="yes" class="inline" name="likecricket" checked/> Yes
+        </label>
+        
+        <label>
+            <input type="radio" value="no" class="inline" name="likecricket" /> No
+        </label>
+
+         <label>Do You Like Football?</label>
+         
+         <label>
+            <input type="radio" value="yes" class="inline" name="likefootball" checked/> Yes
+        </label>
+         
+         <label>
+            <input type="radio" value="no" class="inline" name="likefootball" /> No
+        </label>
+
+         <label>
+            <input type="radio" value="only-cricket" class="inline" name="likefootball" /> I only like Cricket.
+        </label>
+
+      </fieldset>
+
+      <!-- Checkboxes Section -->
+
+      <fieldset>
+
+        <label for="terms">
+            <input type="checkbox" class="inline" name="terms" id="terms" value="1" required> Accept these <a href="https://eelslap.com/">terms and conditions.</a>
+        </label>
+        
+        <label for="emails">
+            <input type="checkbox" class="inline" name="emails" id="emails" value="agree" required> Also Agree to Shit Ton of Waste Emails Every Day.
+        </label>
+
+      </fieldset>
+
+      <!-- A DECISION -->
+      
+      <input type="submit" id="submit" />
+    </form>
+
+  </body>
+</html>
